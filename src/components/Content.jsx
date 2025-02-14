@@ -9,9 +9,9 @@ const Content = () => {
         <img src="assets/workmay.JPG" alt="May Adnan" className="profile-img" />
         <p className="lead text-secondary">.NET Developer</p>
         <p className="intro" style={{ maxWidth: "600px" }}>
-          TEST Passionate and solution-oriented .NET Developer with expertise in
-          C#, SQL, and modern technologies. My background in customer-focused
-          roles helps me build intuitive software solutions.
+          Passionate and solution-oriented .NET Developer with expertise in C#,
+          SQL, and modern technologies. My background in customer-focused roles
+          helps me build intuitive software solutions.
         </p>
         <a href={CV} target="_blank" className="btn btn-dark mt-3">
           <i className="fa-solid fa-download"></i> Download My CV
