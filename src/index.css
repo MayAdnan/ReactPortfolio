@@ -226,23 +226,8 @@ section {
   font-size: 1.1rem;
 }
 
-.greeting-nav {
-  display: inline-block;
-  animation: greetingFade 2s ease-in-out forwards;
-  animation: greetingFade 3s ease-in-out forwards;
-}
-
-.name-nav {
-  opacity: 0;
-  animation: nameAppear 0.5s ease-in-out 2s forwards;
-  animation: nameAppear 0.5s ease-in-out 3s forwards;
-}
-
 @keyframes greetingFade {
   0% {
-    opacity: 1;
-  }
-  80% {
     opacity: 1;
   }
   90% {
@@ -250,8 +235,7 @@ section {
   }
   100% {
     opacity: 0;
-    width: 0;
-    overflow: hidden;
+    visibility: hidden;
   }
 }
 
@@ -323,6 +307,142 @@ html {
     padding: 1.25rem;
   }
 
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 480px) {
+  /* stop vertical centering so content scrolls naturally */
+  body {
+    align-items: flex-start;
+    padding-top: 48px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .hero {
+    padding-top: 48px;
+    padding-bottom: 1.25rem;
+  }
+
+  /* make images and cards fluid */
+  .profile-img {
+    width: min(160px, 40vw);
+    border-radius: 12px;
+  }
+
+  .flip-container {
+    width: min(280px, 90vw);
+    margin-top: 12px;
+  }
+
+  .flip-card {
+    width: 100%;
+    /* keep proportion on small screens */
+    aspect-ratio: 280/350;
+    height: auto;
+  }
+
+  /* smaller nav and tappable links */
+  .navbar {
+    padding: 12px 0;
+    font-size: 15px;
+  }
+
+  .navbar-brand {
+    font-size: 28px !important;
+  }
+
+  .nav-link {
+    font-size: 16px !important;
+    padding: 8px 6px;
+  }
+
+  h2.fw-bold {
+    font-size: clamp(20px, 6vw, 26px);
+  }
+
+  .btn {
+    padding: 10px 16px;
+    gap: 6px;
+    font-size: 15px;
+  }
+
+  .skill-card {
+    padding: 1rem;
+  }
+
+  .content {
+    padding: 12px;
+    max-width: 92vw;
+  }
+
+  /* footer should not cause horizontal scroll on mobile */
+  .footer {
+    width: 100%;
+    margin-left: 0;
+    padding: 1.5rem 0;
+  }
+
+  /* Mobile navbar: stack brand and social icons to avoid overlap */
+  .navbar .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .navbar .navbar-brand {
+    order: 1;
+    flex-basis: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Disable absolute centering on mobile so icons flow into layout */
+  .navbar .social-icons {
+    position: static !important;
+    left: auto !important;
+    transform: none !important;
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    gap: 8px;
+  }
+
+  .navbar .social-icons a {
+    padding: 8px;
+    margin: 0 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Greeting/name animation: ensure single declarations and 3s visible */
+.greeting-nav {
+  display: inline-block;
+  animation: greetingFade 3s ease-in-out forwards;
+}
+
+.name-nav {
+  opacity: 0;
+  animation: nameAppear 0.5s ease-in-out 3s forwards;
+}
+
+/* accessibility: prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    will-change: auto !important;
+  }
 }
 
 /* Light mode refinements */
