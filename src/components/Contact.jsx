@@ -1,29 +1,32 @@
-import React from "react";
-
 const Contact = () => {
   return (
-    <section id="contact" className="text-center py-5">
-      <h2 className="fw-bold"> Let's get in touch </h2>
-      <div className="social-icons mt-3">
+    <footer id="contact" className="footer text-center">
+      <div className="social-icons">
         <a
           href="https://www.linkedin.com/in/may-adnan-b90793193/"
           target="_blank"
-          className="text-dark mx-2"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
         >
-          <i className="fa-brands fa-linkedin fa-2x"></i>
+          <i className="fa-brands fa-linkedin"></i>
         </a>
         <a
           href="https://github.com/MayAdnan"
           target="_blank"
-          className="text-dark mx-2"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
         >
-          <i className="fa-brands fa-github fa-2x"></i>
+          <i className="fa-brands fa-github"></i>
         </a>
-        <a href="mailto:maay.adnan96@gmail.com" className="text-dark mx-2">
-          <i className="fa-solid fa-envelope fa-2x"></i>
+        <a 
+          href="mailto:maay.adnan96@gmail.com" 
+          aria-label="Email"
+        >
+          <i className="fa-solid fa-envelope"></i>
         </a>
       </div>
-    </section>
+      <p className="mt-3">© 2025 May Adnan</p>
+    </footer>
   );
 };
 

@@ -1,11 +1,9 @@
-import React from "react";
-
 const Experience = () => {
   return (
     <section id="experience" className="container py-5 text-center">
-      <h2 className="fw-bold">Experience</h2>
-      <div className="card p-4 shadow-sm text-start">
-      <h4 className="fw-semibold">Software Developer Intern – Comprend</h4>
+      <h2 className="fw-bold" data-aos="fade-up">Experience</h2>
+      <div className="card p-4 text-start" data-aos="fade-up" data-aos-delay="100">
+        <h4 className="fw-semibold">Software Developer Intern – Comprend</h4>
         <p>
           <em>November 2025 – May 2026</em>
         </p>
@@ -51,7 +49,7 @@ const Experience = () => {
         </p>
         <ul>
           <li>
-          Responsible for daily bakery operations, including baking, ordering, and customer service.
+            Responsible for daily bakery operations, including baking, ordering, and customer service.
           </li>
         </ul>
       </div>
