@@ -6,27 +6,27 @@ const Skills = () => {
     },
     {
       title: "Azure Cloud",
-      description: "Deploying and managing cloud-based applications with Azure Functions, Azure Service Bus, Azure Communication Services, and related resources."
+      description: "Deploying and managing cloud-based applications with Azure Functions, Azure Service Bus, Azure Communication Services and related resources."
     },
     {
       title: "C# .NET",
-      description: "Object-oriented programming with LINQ, async/await, and modern .NET features."
+      description: "Object-oriented programming with LINQ, async/await and modern .NET features."
     },
     {
       title: "Data Communication & Security",
-      description: "Implementing secure REST APIs with JWT, HTTPS, and best practices for authentication and authorization."
+      description: "Implementing secure REST APIs with JWT, HTTPS and best practices for authentication and authorization."
     },
     {
       title: "Database",
-      description: "Working with relational and NoSQL databases using EF Core, ADO.NET, SQL Server, T-SQL, and MongoDB."
+      description: "Working with relational and NoSQL databases using EF Core, ADO.NET, SQL Server, T-SQL and MongoDB."
     },
     {
       title: "DevOps",
-      description: "Working with CI/CD pipelines, Azure DevOps, GitHub Actions, and cloud deployments."
+      description: "Working with CI/CD pipelines, Azure DevOps, GitHub Actions and cloud deployments."
     },
     {
       title: "Frontend",
-      description: "Building modern and responsive web interfaces with JavaScript, TypeScript, React, HTML, and CSS."
+      description: "Building modern and responsive web interfaces with JavaScript, TypeScript, React, HTML and CSS."
     },
     {
       title: "Microservices & gRPC",
@@ -34,7 +34,7 @@ const Skills = () => {
     },
     {
       title: "Object-Oriented Analysis & Design",
-      description: "Applying design patterns, SOLID principles, and UML to create maintainable software architectures."
+      description: "Applying design patterns, SOLID principles and UML to create maintainable software architectures."
     },
     {
       title: "Testing",

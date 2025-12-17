@@ -9,7 +9,7 @@ const Education = () => {
         </p>
         <h4 className="fw-semibold">Bachelor's Degree in Dental Hygiene</h4>
         <p>
-          <em>Karolinska Institutet, Flemingsberg 2015 - Graduation 2018</em>
+          <em>Karolinska Institutet 2015 - Graduation 2018</em>
         </p>
       </div>
     </section>

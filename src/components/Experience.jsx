@@ -15,7 +15,7 @@ const Experience = () => {
             Gained hands-on experience with modern web technologies, agile workflows, and collaborative development in a professional environment.
           </li>
         </ul>
-        <h4 className="fw-semibold">Dental Hygienist - Täby Centrum</h4>
+        <h4 className="fw-semibold">Dental Hygienist - Tandläkargruppen </h4>
         <p>
           <em>2018-2024</em>
         </p>
@@ -31,10 +31,10 @@ const Experience = () => {
         </ul>
 
         <h4 className="fw-semibold">
-          Dental Hygienist/Dental Assistant - Mörby Centrum
+          Dental Hygienist/Dental Assistant - Folktandvården
         </h4>
         <p>
-          <em>2016-2018</em>
+          <em>2017-2018</em>
         </p>
         <ul>
           <li>
