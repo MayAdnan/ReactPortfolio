@@ -229,11 +229,13 @@ section {
 .greeting-nav {
   display: inline-block;
   animation: greetingFade 2s ease-in-out forwards;
+  animation: greetingFade 3s ease-in-out forwards;
 }
 
 .name-nav {
   opacity: 0;
   animation: nameAppear 0.5s ease-in-out 2s forwards;
+  animation: nameAppear 0.5s ease-in-out 3s forwards;
 }
 
 @keyframes greetingFade {
@@ -241,6 +243,9 @@ section {
     opacity: 1;
   }
   80% {
+    opacity: 1;
+  }
+  90% {
     opacity: 1;
   }
   100% {
