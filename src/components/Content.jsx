@@ -15,22 +15,23 @@ const Content = () => {
           </div>
         </div>
         <p className="lead text-secondary" data-aos="fade-up" data-aos-delay="500">
-          .NET Developer | Dental Hygienist
+          Full-stack Developer at Comprend · Dental Hygienist by background
         </p>
-        <p className="intro" style={{ maxWidth: "600px" }} data-aos="fade-up" data-aos-delay="600">
-          Passionate and solution-oriented .NET Developer with expertise in C#,
-          SQL, and modern technologies. My background in customer-focused roles
-          helps me build intuitive software solutions.
+        <p className="intro" style={{ maxWidth: "640px" }} data-aos="fade-up" data-aos-delay="600">
+          I build web platforms and integrations for clients like Swedbank,
+          L&apos;Oréal and SCA, mostly in TypeScript, React, C#/.NET, Python and
+          Optimizely. Before I wrote code I spent eight years in dental care,
+          so I know what it&apos;s like to be the person using the system, not
+          just the one building it.
         </p>
-        <a 
-          href={CV} 
-          target="_blank" 
-          className="btn btn-dark mt-3"
-          data-aos="fade-up"
-          data-aos-delay="700"
-        >
-          <i className="fa-solid fa-download"></i> Download My CV
-        </a>
+        <div data-aos="fade-up" data-aos-delay="700">
+          <a href="#projects" className="btn btn-dark mt-3 me-2">
+            <i className="fa-solid fa-code"></i> See my work
+          </a>
+          <a href={CV} target="_blank" rel="noopener noreferrer" className="btn btn-outline-dark mt-3">
+            <i className="fa-solid fa-download"></i> Download CV
+          </a>
+        </div>
       </div>
     </main>
   );

@@ -11,6 +11,8 @@ const Header = () => {
           <a
             href="https://www.linkedin.com/in/may-adnan-b90793193/"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
             className="text-dark mx-2"
           >
             <i className="fa-brands fa-linkedin fa-lg"></i>
@@ -18,11 +20,13 @@ const Header = () => {
           <a
             href="https://github.com/MayAdnan"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
             className="text-dark mx-2"
           >
             <i className="fa-brands fa-github fa-lg"></i>
           </a>
-          <a href="mailto:maay.adnan96@gmail.com" className="text-dark mx-2">
+          <a href="mailto:maay.adnan96@gmail.com" aria-label="Email" className="text-dark mx-2">
             <i className="fa-solid fa-envelope fa-lg"></i>
           </a>
         </div>
@@ -43,12 +47,17 @@ const Header = () => {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <a className="nav-link" href="#content">
-                  About Me
+                  About
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#education">
-                  Education 
+                <a className="nav-link" href="#projects">
+                  Projects
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#experience">
+                  Experience
                 </a>
               </li>
               <li className="nav-item">
@@ -57,8 +66,8 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#experience">
-                  Experience
+                <a className="nav-link" href="#education">
+                  Education
                 </a>
               </li>
             </ul>
