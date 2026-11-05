@@ -2,34 +2,7 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg fixed-top bg-white shadow-sm px-4">
       <div className="container-fluid position-relative">
-        <a className="navbar-brand fw-bold" href="#home">
-          May Adnan
-        </a>
         
-        <div className="social-icons position-absolute start-50 translate-middle-x d-flex">
-          <a
-            href="https://www.linkedin.com/in/may-adnan-b90793193/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            className="text-dark mx-2"
-          >
-            <i className="fa-brands fa-linkedin fa-lg"></i>
-          </a>
-          <a
-            href="https://github.com/MayAdnan"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-            className="text-dark mx-2"
-          >
-            <i className="fa-brands fa-github fa-lg"></i>
-          </a>
-          <a href="mailto:maay.adnan96@gmail.com" aria-label="Email" className="text-dark mx-2">
-            <i className="fa-solid fa-envelope fa-lg"></i>
-          </a>
-        </div>
-
         <div className="d-flex align-items-center ms-auto">
           <button
             className="navbar-toggler"

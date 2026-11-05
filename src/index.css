@@ -3,7 +3,10 @@
 :root {
   --primary-color: #151516;
   --secondary-color: #fafafa;
-  --accent-color: #4361ee;
+  --accent-color: #1f3a5f;
+  --accent-soft: #e9eff8;
+  --accent-tint: #f3f6fb;
+  --teal: #2a7f8e;
   --text-muted: #6c757d;
   --card-bg: #ffffff;
   --card-shadow: 0 4px 16px rgba(128, 128, 128, 0.25);
@@ -29,8 +32,20 @@ body {
 h2.fw-bold {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 1.5rem;
-  color: var(--primary-color);
+  margin-bottom: 1.75rem;
+  color: var(--accent-color);
+  position: relative;
+  padding-bottom: 0.6rem;
+}
+
+h2.fw-bold::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--teal);
+  margin: 0.6rem auto 0;
 }
 
 h4.fw-semibold {
@@ -148,8 +163,19 @@ h4.fw-semibold {
   transition: all 0.3s ease;
 }
 
+.btn-dark {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.btn-outline-dark {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
 .btn:hover {
-  background-color: var(--primary-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
   color: var(--secondary-color);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
@@ -188,7 +214,7 @@ h4.fw-semibold {
   font-weight: 700;
   font-size: 16px;
   margin-bottom: 0.75rem;
-  color: var(--primary-color);
+  color: var(--accent-color);
 }
 
 .skill-card p {
@@ -263,7 +289,7 @@ section {
 
 /* Footer */
 .footer {
-  background-color: var(--primary-color);
+  background-color: var(--accent-color);
   color: #ffffff;
   padding: 2rem 0;
   margin-top: 2rem;
@@ -278,7 +304,7 @@ section {
 }
 
 .footer .social-icons a:hover {
-  color: var(--accent-color);
+  color: #9fd3dc;
 }
 
 .footer p {
@@ -427,6 +453,7 @@ html {
   padding-top: 130px;
   padding-bottom: 3rem;
   width: 100%;
+  background: linear-gradient(180deg, var(--accent-tint) 0%, var(--secondary-color) 100%);
 }
 
 .hero-name {
@@ -434,13 +461,13 @@ html {
   font-weight: 700;
   letter-spacing: -0.02em;
   margin-bottom: 0.25rem;
-  color: var(--primary-color);
+  color: var(--accent-color);
 }
 
 .hero-title {
   font-size: 1.15rem;
   font-weight: 500;
-  color: var(--text-muted);
+  color: var(--teal);
   margin-bottom: 1.25rem;
 }
 
@@ -459,7 +486,7 @@ html {
 }
 
 .hero-photo {
-  width: min(300px, 70vw);
+  width: min(360px, 80vw);
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 16px;
@@ -480,7 +507,7 @@ html {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--teal);
   margin-bottom: 0.75rem;
 }
 
@@ -496,7 +523,7 @@ html {
   font-weight: 500;
   padding: 6px 14px;
   border-radius: 999px;
-  background: rgba(67, 97, 238, 0.08);
+  background: var(--accent-soft);
   color: var(--accent-color);
   white-space: nowrap;
 }
@@ -504,12 +531,15 @@ html {
 .chip-tag {
   font-size: 12px;
   align-self: flex-start;
+  background: rgba(42, 127, 142, 0.12);
+  color: var(--teal);
 }
 
 /* ---------- Experience / Education cards ---------- */
 .xp-card {
   background: var(--card-bg);
   border-radius: 12px;
+  border-left: 4px solid var(--accent-color);
   box-shadow: var(--card-shadow);
   padding: 1.75rem 2rem;
   margin: 0 auto 1.25rem;
@@ -534,6 +564,7 @@ html {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 0.25rem;
+  color: var(--accent-color);
 }
 
 .xp-meta {
@@ -620,4 +651,36 @@ html {
 
 .public-card .btn {
   align-self: center;
+}
+
+.navbar .container-fluid {
+  justify-content: flex-end;
+}
+
+/* Soft band behind Skills and Education for rhythm */
+#skills,
+#education {
+  background: var(--accent-tint);
+  max-width: 100%;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#skills > .container,
+#education .xp-card {
+  max-width: 1320px;
+}
+
+#education .xp-card {
+  max-width: 960px;
+}
+
+.navbar {
+  border-bottom: 3px solid var(--accent-color);
+}
+
+#skills > .container {
+  padding-left: 24px;
+  padding-right: 24px;
 }
