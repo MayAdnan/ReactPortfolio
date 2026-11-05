@@ -3,12 +3,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Header from "./components/Header";
 import Content from "./components/Content";
-import Education from "./components/Education";
 import Experience from "./components/Experience";
-import Contact from "./components/Contact";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
+import PublicWork from "./components/PublicWork";
+import Education from "./components/Education";
+import Languages from "./components/Languages";
+import Contact from "./components/Contact";
 import "./index.css";
 
 function App() {
@@ -24,11 +25,12 @@ function App() {
     <>
       <Header />
       <Content />
-      <Projects />
       <Experience />
       <Skills />
       <Certifications />
+      <PublicWork />
       <Education />
+      <Languages />
       <Contact />
     </>
   );

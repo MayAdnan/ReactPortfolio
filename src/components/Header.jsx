@@ -2,9 +2,8 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg fixed-top bg-white shadow-sm px-4">
       <div className="container-fluid position-relative">
-        <a className="navbar-brand fw-bold" href="#">
-          <span className="greeting-nav">Hi, I'm</span>
-          <span className="name-nav">May Adnan</span>
+        <a className="navbar-brand fw-bold" href="#home">
+          May Adnan
         </a>
         
         <div className="social-icons position-absolute start-50 translate-middle-x d-flex">
@@ -46,13 +45,8 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" href="#content">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#projects">
-                  Projects
+                <a className="nav-link" href="#home">
+                  Home
                 </a>
               </li>
               <li className="nav-item">
@@ -63,6 +57,11 @@ const Header = () => {
               <li className="nav-item">
                 <a className="nav-link" href="#skills">
                   Skills
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#certifications">
+                  Certifications
                 </a>
               </li>
               <li className="nav-item">
