@@ -1,8 +1,20 @@
-# React + Vite
+# May Adnan – portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio site: [mayadnan.github.io/ReactPortfolio](https://mayadnan.github.io/ReactPortfolio/)
 
-Currently, two official plugins are available:
+Full-stack developer at Comprend with a background as a licensed dental hygienist. The site covers my client work (Swedbank, L'Oréal, SCA and an Optimizely CMP → Elevate integration), personal projects, experience, skills and certifications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Stack
+
+React 19, Vite, Bootstrap 5, AOS, Font Awesome.
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Deploy
+
+Pushing to `main` builds the site with GitHub Actions and publishes it to GitHub Pages (`.github/workflows/deploy.yml`).

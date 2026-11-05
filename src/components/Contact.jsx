@@ -25,7 +25,7 @@ const Contact = () => {
           <i className="fa-solid fa-envelope"></i>
         </a>
       </div>
-      <p className="mt-3">© 2025 May Adnan</p>
+      <p className="mt-3">© {new Date().getFullYear()} May Adnan</p>
     </footer>
   );
 };

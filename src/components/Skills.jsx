@@ -1,44 +1,40 @@
 const Skills = () => {
   const skills = [
     {
-      title: "ASP.NET",
-      description: "Developing web APIs and MVC-based web applications using ASP.NET."
-    },
-    {
-      title: "Azure Cloud",
-      description: "Deploying and managing cloud-based applications with Azure Functions, Azure Service Bus, Azure Communication Services and related resources."
-    },
-    {
-      title: "C# .NET",
-      description: "Object-oriented programming with LINQ, async/await and modern .NET features."
-    },
-    {
-      title: "Data Communication & Security",
-      description: "Implementing secure REST APIs with JWT, HTTPS and best practices for authentication and authorization."
-    },
-    {
-      title: "Database",
-      description: "Working with relational and NoSQL databases using EF Core, ADO.NET, SQL Server, T-SQL and MongoDB."
-    },
-    {
-      title: "DevOps",
-      description: "Working with CI/CD pipelines, Azure DevOps, GitHub Actions and cloud deployments."
-    },
-    {
       title: "Frontend",
-      description: "Building modern and responsive web interfaces with JavaScript, TypeScript, React, HTML and CSS."
+      description: "TypeScript, JavaScript, React, Next.js, HTML, CSS, Tailwind and component libraries."
     },
     {
-      title: "Microservices & gRPC",
-      description: "Designing and implementing distributed systems and microservices using gRPC and REST for scalable service-to-service communication."
+      title: "C# / .NET",
+      description: "ASP.NET Core, Entity Framework Core, LINQ, async/await, Web APIs and MVC."
     },
     {
-      title: "Object-Oriented Analysis & Design",
-      description: "Applying design patterns, SOLID principles and UML to create maintainable software architectures."
+      title: "Python & integrations",
+      description: "Python services, REST and GraphQL APIs, webhooks and integrations against external APIs."
     },
     {
-      title: "Testing",
-      description: "Writing automated unit and integration tests to ensure reliability and quality, using tools such as xUnit and in-memory databases."
+      title: "Optimizely",
+      description: "CMS, Graph, CMP and Agent Platform (Opal). Three Optimizely certifications."
+    },
+    {
+      title: "Databases",
+      description: "PostgreSQL, SQL Server, T-SQL, EF Core and MongoDB."
+    },
+    {
+      title: "Cloud & DevOps",
+      description: "Azure (Functions, Service Bus, Key Vault, APIM), CI/CD with GitHub Actions and Azure DevOps."
+    },
+    {
+      title: "Automation & AI",
+      description: "n8n workflows, AI agents and custom tools, and AI-assisted development every day."
+    },
+    {
+      title: "Security",
+      description: "JWT, HTTPS, authentication and authorization, and GDPR in practice from years of handling patient data."
+    },
+    {
+      title: "Testing & quality",
+      description: "Automated unit and integration tests with xUnit and pytest, code review and clear documentation."
     }
   ];
 
@@ -48,10 +44,10 @@ const Skills = () => {
         <h2 className="fw-bold" data-aos="fade-up">Skills</h2>
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
           {skills.map((skill, index) => (
-            <div className="col" key={index}>
-              <div 
-                className="skill-card" 
-                data-aos="fade-up" 
+            <div className="col" key={skill.title}>
+              <div
+                className="skill-card"
+                data-aos="fade-up"
                 data-aos-delay={100 + index * 50}
               >
                 <h5>{skill.title}</h5>

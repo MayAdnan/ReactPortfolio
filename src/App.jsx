@@ -7,6 +7,8 @@ import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Certifications from "./components/Certifications";
 import "./index.css";
 
 function App() {
@@ -22,9 +24,11 @@ function App() {
     <>
       <Header />
       <Content />
-      <Education />
-      <Skills />
+      <Projects />
       <Experience />
+      <Skills />
+      <Certifications />
+      <Education />
       <Contact />
     </>
   );
